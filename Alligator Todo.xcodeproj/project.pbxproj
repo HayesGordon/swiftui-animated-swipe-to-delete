@@ -11,6 +11,11 @@
 		F82A0D652A93A4940013A43B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A0D642A93A4940013A43B /* ContentView.swift */; };
 		F82A0D672A93A4950013A43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82A0D662A93A4950013A43B /* Assets.xcassets */; };
 		F82A0D6A2A93A4950013A43B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82A0D692A93A4950013A43B /* Preview Assets.xcassets */; };
+		F82A0D722A93A4CD0013A43B /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F82A0D712A93A4CD0013A43B /* RiveRuntime */; };
+		F82A0D782A93A52F0013A43B /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A0D772A93A52F0013A43B /* TodoList.swift */; };
+		F82A0D7A2A93A9270013A43B /* TodoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A0D792A93A9270013A43B /* TodoTile.swift */; };
+		F82A0D7E2A93A9930013A43B /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A0D7D2A93A9930013A43B /* TodoModel.swift */; };
+		F82A0D802A949AAB0013A43B /* alligator_swipe.riv in Resources */ = {isa = PBXBuildFile; fileRef = F82A0D7F2A949AAB0013A43B /* alligator_swipe.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		F82A0D642A93A4940013A43B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F82A0D662A93A4950013A43B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82A0D692A93A4950013A43B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F82A0D772A93A52F0013A43B /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		F82A0D792A93A9270013A43B /* TodoTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTile.swift; sourceTree = "<group>"; };
+		F82A0D7D2A93A9930013A43B /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		F82A0D7F2A949AAB0013A43B /* alligator_swipe.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = alligator_swipe.riv; path = ../../../../../../Downloads/alligator_swipe.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82A0D722A93A4CD0013A43B /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +61,10 @@
 		F82A0D612A93A4940013A43B /* Alligator Todo */ = {
 			isa = PBXGroup;
 			children = (
+				F82A0D7C2A93A96D0013A43B /* models */,
+				F82A0D7B2A93A9390013A43B /* views */,
+				F82A0D732A93A4F70013A43B /* animations */,
 				F82A0D622A93A4940013A43B /* Alligator_TodoApp.swift */,
-				F82A0D642A93A4940013A43B /* ContentView.swift */,
 				F82A0D662A93A4950013A43B /* Assets.xcassets */,
 				F82A0D682A93A4950013A43B /* Preview Content */,
 			);
@@ -65,6 +77,32 @@
 				F82A0D692A93A4950013A43B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F82A0D732A93A4F70013A43B /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				F82A0D7F2A949AAB0013A43B /* alligator_swipe.riv */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		F82A0D7B2A93A9390013A43B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F82A0D642A93A4940013A43B /* ContentView.swift */,
+				F82A0D772A93A52F0013A43B /* TodoList.swift */,
+				F82A0D792A93A9270013A43B /* TodoTile.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F82A0D7C2A93A96D0013A43B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F82A0D7D2A93A9930013A43B /* TodoModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = "Alligator Todo";
+			packageProductDependencies = (
+				F82A0D712A93A4CD0013A43B /* RiveRuntime */,
+			);
 			productName = "Alligator Todo";
 			productReference = F82A0D5F2A93A4940013A43B /* Alligator Todo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = F82A0D562A93A4940013A43B;
+			packageReferences = (
+				F82A0D702A93A4CD0013A43B /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = F82A0D602A93A4940013A43B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82A0D6A2A93A4950013A43B /* Preview Assets.xcassets in Resources */,
+				F82A0D802A949AAB0013A43B /* alligator_swipe.riv in Resources */,
 				F82A0D672A93A4950013A43B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82A0D782A93A52F0013A43B /* TodoList.swift in Sources */,
 				F82A0D652A93A4940013A43B /* ContentView.swift in Sources */,
+				F82A0D7A2A93A9270013A43B /* TodoTile.swift in Sources */,
+				F82A0D7E2A93A9930013A43B /* TodoModel.swift in Sources */,
 				F82A0D632A93A4940013A43B /* Alligator_TodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F82A0D702A93A4CD0013A43B /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F82A0D712A93A4CD0013A43B /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F82A0D702A93A4CD0013A43B /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F82A0D572A93A4940013A43B /* Project object */;
 }
